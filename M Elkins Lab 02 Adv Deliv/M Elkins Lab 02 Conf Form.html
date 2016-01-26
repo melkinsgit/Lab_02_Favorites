@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD ------------------------------------------------------------------->
+<head>
+    <meta charset="UTF-8">
+
+    <!--&lt;!&ndash; viewport metatag enables rendering and touch zooming for mobile &ndash;&gt;-->
+    <meta name="viewport" content="width=devide-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="M%20Elkins%20Lab%2002%20Conf%20Form%20CSS.css">
+
+    <!--<title>How To Spend Conference</title>-->
+
+</head>
+
+<!-- BODY ------------------------------------------------------------------->
+<body id="gradient">
+
+<div class="jumbotron">
+
+    <h1 class="center-text">Learn How To Spend Your Money</h1>
+    <h2 class="center-text">It's not a budget. It's a spending plan.</h2>
+
+</div>
+
+<form action="http://www.example.com/conference" method="get">
+
+    <!-- make these two fieldsets columns?? -->
+    <!-- email, dob-->
+    <fieldset>
+        <legend>
+            About You
+        </legend>
+
+        <label>
+            email:
+            <input type="email" name="emailAddr" maxlength="100" required="required">
+        </label>
+
+        <label>
+            DOB:
+            <input type="date" name="DOB" required="required">
+        </label>
+    </fieldset>
+
+    <!-- user name, pwd-->
+    <fieldset>
+        <legend>
+            Your Login Info
+        </legend>
+
+        <label>
+            User Name:
+            <input type="text" name="userName" maxlength="70" required="required">
+        </label>
+
+        <label>
+            Password:
+            <input type="password" name="passWord" maxlength="100" required="required">
+        </label>
+    </fieldset>
+
+    <!-- put these two fieldsets in columns -->
+    <!-- t-shirt size -->
+    <fieldset>
+        <legend>
+            Your T-Shirt Size
+        </legend>
+
+        <select name="shirtSize" size="1" required="required">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select>
+
+    </fieldset>
+
+    <!-- sessions choice -->
+    <fieldset>
+        <legend>
+            Your Sessions
+        </legend>
+
+        <p class="instruct">
+            You may choose one or both.
+        </p>
+
+        <label>
+            <input type="checkbox" name="sessionChoice" value="morning">
+            Morning
+        </label>
+
+        <label>
+            <input type="checkbox" name="sessionChoice" value="afternoon">
+            Afternoon
+        </label>
+    </fieldset>
+
+    <p>
+    <!-- text input box -->
+    <fieldset>
+        <legend>
+            Any Special Requests?
+        </legend>
+
+        <textarea name="specRequests" cols="40" rows="6">Enter them here...</textarea>
+    </fieldset>
+    </p>
+
+    <!-- Put these two divs in columns -->
+    <!-- Do you want info? -->
+    <div>
+        <label>
+            <input type="radio" name="getEmailInfo" value="yesEmail" required="required" checked="checked">Yes, I would like to receive information via email from conference sponsors?<br/>
+            <input type="radio" name="getEmailInfo" value="noEmail">No thanks, I'd prefer not to receive information.
+        </label>
+    </div>
+
+    <!-- register button -->
+    <div>
+        <button type="submit" name="btnRegister">
+            Register Now
+        </button>
+    </div>
+
+</form>
+
+</body>
+
+</html>

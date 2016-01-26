@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Theme Simply Me</title>
+    <meta charset="UTF-8">
+    <!-- viewport metatag enables rendering and touch zooming for mobile -->
+    <meta name="viewport" content="width=devide-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+
+<!-- STYLES:  Pallette came from http://www.colorhunter.com/browse.php?h=y&p=http%3A%2F%2Fwww.colorhunter.com%2Fuploads%2F428.jpg and was based on the colors in the hiker image I used at the top of my page. I also looked for a paletter to match one of the colors the first palette finder came up. That took me to this palette http://www.colormixture.com/857756.-->
+<style>
+    body {
+        font: 20px "Montserrat", sans-serif;
+        line-height: 1.8;
+        color: #f5f6f7;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .bg1 {
+        background-color: #82D8ff;
+        color: orange;
+    }
+
+    .bg2 {
+        background-color: #857755;
+        color: orange;
+    }
+
+    .bg3 {
+        background-color: #AACAE2;
+        color: orange;
+    }
+
+    .bg4 {
+        background-color: #a99b7a;
+    }
+
+    #p2 {
+        color: #2cb4ff;
+    }
+
+    #bar1 {
+        background-color: #adcc68;
+        height: 20px;
+    }
+
+    #bar2 {
+        background-color: #8fb240;
+        height: 20px;
+    }
+
+    .p3 {
+        color: #393a32;
+    }
+
+    .container-fluid {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .navbar{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: 0;
+        border-radius: 0;
+        margin-bottom: 0;
+        font-size: 12px;
+        letter-spacing: 5px;
+    }
+
+    .navbar-nav li a:hover {
+        color: #1abc9c !important;
+    }
+
+    .margin {
+        margin-bottom: 45px;
+    }
+</style>
+
+<!-- NAV BAR -->
+<nav class="navbar navbar-default">
+
+    <div class="container">
+
+        <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
+            </button>
+
+            <a class="navbar-brand" href="#">Me</a>
+
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+
+            <ul class="nav navbar-nav navbar-right">
+
+                <li><a href="#">WHO</a></li>
+                <li><a href="#">WHAT</a></li>
+                <li><a href="#">WHERE</a></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<!-- TOP DIV -->
+<!-- container-fluid is a class in bootstrap, simplyBg is a class name to be used in CSS, text-center is also a class in bootstrap -->
+<div class="container-fluid bg1 text-center">
+    <h3 class="margin">Who Am I?</h3>
+    <!-- img-circle class exists in bootstrap -->
+    <img src="hiker.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Hiker">
+    <h3 class="margin">I'm a hiker.</h3>
+</div>
+
+<!-- BAR 1 -->
+<hr id="bar1" class="container-fluid">
+</hr>
+
+
+<!-- MIDDLE DIV -->
+<div class="container-fluid bg2 text-center">
+    <h3 class="margin">What Am I?</h3>
+    <p id="p2">No matter where I go in the world, I want to hike its trails. Each place I dream of going includes a dream of</br>where I can put one foot in front of another and explore the landscape, smell the air, touch the leaves of yet</br>another piece of magic on this earth.</p>
+    <a href="#" class="btn btn-default btn-lg">
+        <span class="glyphicon glyphicon-search"></span> Search</a>
+</div>
+
+<!-- BAR 2 -->
+<hr id="bar2" class="container-fluid">
+</hr>
+
+<!-- BOTTOM DIV -->
+<div class="container-fluid bg3 text-center">
+    <h3 class="margin">Where To Find Me?</h3>
+    <div>
+        <p class="p3">My favorite hikes are along mountain ridges overlooking the water. Ideally a mountain ridge in Europe that overlooks the Mediaterranean.</p>
+    </div>
+
+    <!-- ROW DIV -->
+    <div class="row">
+
+        <!-- COLUMN 1 -->
+        <div class="col-sm-4">
+            <p class="p3">For the past five years, I've been privileged to visit the Canadian Rockies, and even though it sees a lot of tourists in summer, I love to hike up to the Agnes Lake Tea House from Lake Louise and follow the High Line trail up the valley.</p>
+
+            <img src="rsz_edithcavell3aabai.jpg" class="img-responsive margin" style="width:100%" alt="image">
+
+        </div>
+
+        <!-- COLUMN 2 -->
+        <div class="col-sm-4">
+            <p class="p3">Another favorite spot in the Canadian Rockies is Mount Edith Cavell, named after a WW1 nurse who smuggled Allied Soldiers from her hospital behind enemy lines to safetey in Belgium. The Germans discovered her work and tried her with treason, though she was not a German. She was executed by firing squad.</p>
+
+            <img src="EdithCavellAAbai.jpg" class="img-responsive margin" style="width:100%" alt="image">
+
+        </div>
+
+        <!-- COLUMN 3 -->
+        <div class="col-sm-4">
+            <p class="p3">And there is always great company on the trail.</p>
+
+            <img src="HikeratEdithCavellGTraub.jpg" class="img-responsive margin" style="width:100%" alt="image">
+
+        </div>
+    <!-- END ROW -->
+    </div>
+
+<!-- END BOTTOM DIV -->
+</div>
+
+</body>
+
+<!-- FOOTER -->
+<footer class="container-fluid bg4 text-center">
+    <p>Bootstrap Theme Made By Margaret Elkins with help from <a href="http://www.w3schools.com">www.w3schools.com</a></p>
+</footer>
+</html>

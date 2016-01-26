@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Bootstrap</title>
+    <!-- viewport metatag enables rendering and touch zooming for mobile -->
+    <meta name="viewport" content="width=devide-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+
+    <link rel="stylesheet" href="M%20Elkins%20Lab%2002%20Bootstrap%20Jtron%20CSS.css">
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+</head>
+<body>
+
+<!-- A bootstrap div -->
+
+    <div class="jumbotron">
+
+        <h1 class="center-text">Check Out Some of My Clever Code</h1>
+
+    </div>
+
+<!-- A boostrap div -->
+
+    <div class="container">
+
+        <h1>My first bootstrap page</h1>
+
+        <p>Below is a class code sample. The class is defined specifically for static calls to queries. The queries create a result set that are combinations of existing tables. The first two are one part joins and the third is a two part join.</p>
+    </div>
+
+
+<!-- A code div -->
+
+    <div class="codeBlock">
+            <pre>
+                <code>
+    public class Queries {
+
+    public final static String teacherSkedJoin = "SELECT * FROM " + CreateTables.CLASS_TABLE_NAME + " INNER JOIN " + CreateTables.TEACHER_TABLE_NAME + " ON " + CreateTables.CLASS_TABLE_NAME + "." + CreateTables.TEACHER_PK_COL + " = " + CreateTables.TEACHER_TABLE_NAME + "." + CreateTables.TEACHER_PK_COL;
+
+    public final static String enrollJoin = "SELECT * FROM " + CreateTables.CLASS_TABLE_NAME + " INNER JOIN " + CreateTables.TEACHER_TABLE_NAME + " ON " + CreateTables.CLASS_TABLE_NAME + "." + CreateTables.TEACHER_PK_COL + "=" + CreateTables.TEACHER_TABLE_NAME + "." + CreateTables.TEACHER_PK_COL;
+
+    public final static String studentSkedJoin = CreateTables.STUDENT_TABLE_NAME + " inner join " + CreateTables.STUDENT_CLASS_TABLE_NAME + " on " + CreateTables.STUDENT_TABLE_NAME + "." + CreateTables.STUDENT_PK_COL + " = " + CreateTables.STUDENT_CLASS_TABLE_NAME + "." + CreateTables.STUD_FK_PK_COL + " inner join " + CreateTables.CLASS_TABLE_NAME + " on " + CreateTables.STUDENT_CLASS_TABLE_NAME + "." + CreateTables.CLASS_FK_PK_COL + " = " + CreateTables.CLASS_TABLE_NAME + "." + CreateTables.CLASS_FK_PK_COL;
+
+    public static boolean duplicateFlag = false;
+
+    public static boolean studentEnrolled = false;
+    }
+                </code>
+            </pre>
+    </div>
+
+    <div class="container">
+        <h2>See all the code at <a href="https://github.com/melkinsgit/ElkinsMusicSchool/tree/master/src/com/margaret">my Gibthub</a> repository.</h2>
+    </div>
+</body>
+</html>

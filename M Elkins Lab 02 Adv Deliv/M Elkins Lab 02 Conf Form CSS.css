@@ -1,0 +1,81 @@
+/*Some colors to go with aqua blue 00f6f6*/
+/*#0062f6 dark blue */
+/*#3100f6 dark blue */
+/*#c400f6 purple */
+/*#f60093 pink */
+/*#f60000 red */
+/*#f69300 orange */
+/*#c4f600 yellow */
+/*#31f600 green */
+/*#00f662 another aqua */
+
+
+/* I couldn't get my gradient to fill the entire screen - found this fix on stack overflow: http://stackoverflow.com/questions/5721904/make-body-fill-entire-screen */
+html, body {
+    height: 100%;
+}
+
+/* Couldn't get the p 419 sytax to work on my page, may have been a coflict with Boostrap (?) so I went to Stack Overflow and found this simple implementation: http://stackoverflow.com/questions/6788749/google-chrome-background-gradient */
+#gradient {
+    background-color: #d1f8ae;
+    background: -webkit-linear-gradient(#d1f8ae, #2b3025);
+}
+
+.center-text {
+    text-align: center;
+}
+
+.jumbotron {
+    background-color: #f1d2f4;
+}
+
+input {
+    font-size: 110%;
+    color: #9d46a3;
+}
+
+fieldset{
+    background-color: #dc5e88;
+    margin: 20px;
+}
+
+legend {
+    background: #ffe200;
+    padding: 5px;
+}
+
+div {
+    background-color: #dc5e88;
+    padding: 20px;
+    margin: 20px;
+}
+
+.row {
+    background-color: #dc5e88;
+    margin: 20px;
+}
+
+label, select, textarea {
+    padding: 0 5px 5px 5px;
+}
+
+p, label, select, option {
+    font-size: 16px;
+}
+
+select, textarea {
+    margin: 5px;
+}
+
+/*option, p {*/
+    /*padding: 2px;*/
+/*}*/
+
+button {
+    width: 200px;
+    height: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #00f662;
+    color: #c4f600;
+}
